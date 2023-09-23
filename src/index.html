@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,34 +9,97 @@
 
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-400 font-serif">
-            <header class="py-6 mx-10">
+        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 font-serif">
+            <header class="py-6 mx-10 shadow-md sticky top-0 ">
                 <nav class="flex flex-row justify-between items-center ">
                     <div class="logo basis-1/3 text-center text-xl font-semibold cursor-pointer">DoQuangTrieu</div>
                     <ul
                         class=" basis-2/3 flex items-center justify-center gap-16 uppercase text-sm font-medium text-gray-500">
-                        <li class="ct-top-menu-item">
-                            <a href="#" class="">
+                        <li>
+                            <a href="#" class="ct-top-menu-item">
                                 home
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="ct-top-menu-item"> about </a>
+                            <a href="#about" class="ct-top-menu-item "> about </a>
                         </li>
                         <li>
-                            <a href="#" class="ct-top-menu-item"> exercise </a>
+                            <a href="#exercises" class="ct-top-menu-item"> exercises </a>
                         </li>
                         <li>
-                            <a href="#" class="ct-top-menu-item"> contact </a>
+                            <a href="#footer" class="ct-top-menu-item"> contact </a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <main>
-                main
+            <main class="py-52 mx-10">
+                <div id="about" class="about-me flex flex-row justify-center mx-7 items-center">
+                    <div class="introduction basis-1/2 text-3xl mx-2">
+                        <h6 class="mb-4  text-gray-500">This is me</h6>
+                        <h1 class="mb-4 font-extrabold h-16 w-auto uppercase text-center">Do Quang Trieu</h1>
+                        <div class="mb-10  text-gray-500">👋I am currently studying at HCMUTE. I’m interested in coding
+                            web. 💞️ I’m looking to collaborate on my friend</div>
+                        <a href="#footer"
+                            class="h-fit w-fit px-2.5 absolute py-3 rounded-md shadow-lg hover:shadow-blue-500/80 bg-blue-300 text-slate-500 text-center hover:text-slate-900">Contact
+                            me</a>
+                    </div>
+                    <div class="avarta basis-1/2 mx-2">
+                        <img src="../assets/avatar.jpg" alt="dqt-image"
+                            class="rounded-3xl max-w-full max-h-full scale-75 hover:scale-100 ease-in-out transition duration-300">
+                    </div>
+                </div>
+                <div id="exercises"
+                    class="exercise my-44 py-10 px-7 rounded-lg border-slate-600 border-opacity-25 border-x-2">
+                    <h1
+                        class="font-extrabold text-4xl transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300">
+                        Exercises</h1>
+                    <ul class="text-2xl">
+                        <li class="basis-1/3 flex justify-start font-extrabold my-5">
+                            Week 1:
+                            <a href="https://doquangtrieu.onrender.com/JavaWeb"
+                                class="basis-2/3 flex justify-center font-normal hover:font-extrabold">abc</a>
+                        </li>
+                        <li class="basis-1/3 flex justify-start font-extrabold my-5">Week 2:
+                            <a href="" class="basis-2/3 flex justify-center font-normal hover:font-extrabold">abcs</a>
+                        </li>
+                        <li class="basis-1/3 flex justify-start font-extrabold my-5">Week 3:
+                            <a href="" class="basis-2/3 flex justify-center font-normal hover:font-extrabold">abcs</a>
+                        </li>
+                    </ul>
+                </div>
             </main>
-            <footer id="footer" class="">
-                footer
+            <footer id="footer">
+                <div
+                    class="social border-slate-600 border-opacity-25 border-y-2 mx-7 flex items-center flex-col gap-3 py-5">
+                    <h4 class="font-semibold text-4xl">Follow me</h4>
+                    <div class="text-slate-600">Let me be social!</div>
+                    <div class="flex">
+                        <a href="https://www.facebook.com/grei.goa" class="px-3 ">
+                            <svg class="h-8 w-8 hover:fill-blue-400 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/yarggxzc/" class="px-3 ">
+                            <svg class="h-8 w-8 hover:fill-orange-300 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" class="px-3">
+                            <svg class="h-8 w-8 hover:fill-blue-300 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </footer>
         </div> <!-- end content-wrapper -->
     </div> <!-- end root -->
