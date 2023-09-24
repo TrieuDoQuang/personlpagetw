@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icon.png" type="image/gif" sizes="16x16">
     <link href="../dist/output.css" rel="stylesheet">
+    <script src="main.js" async></script>
+
 </head>
 
 <body>
     <div id="root">
         <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 font-serif">
-            <header class="py-6 mx-10 shadow-md sticky top-0 ">
-                <nav class="flex flex-row justify-between items-center ">
-                    <div class="logo basis-1/3 text-center text-xl font-semibold cursor-pointer">DoQuangTrieu</div>
-                    <ul
-                        class=" basis-2/3 flex items-center justify-center gap-16 uppercase text-sm font-medium text-gray-500">
+            <header class="py-6 mx-10 shadow-md sticky top-0 z-50">
+                <nav class="flex flex-row justify-between items-center relative">
+                    <div class="logo basis-1/3 mx-3 text-center text-sm lg:text-xl font-semibold cursor-pointer">
+                        DoQuangTrieu</div>
+                    <ul id="top-icons"
+                        class="basis-2/3 hidden lg:flex lg:items-center lg:justify-center lg:gap-16 uppercase text-sm font-medium text-gray-500">
                         <li>
                             <a href="#" class="ct-top-menu-item">
                                 home
@@ -30,14 +34,23 @@
                             <a href="#footer" class="ct-top-menu-item"> contact </a>
                         </li>
                     </ul>
+                    <div class="mx-4 lg:hidden basis-2/3 flex justify-end">
+                        <svg id="top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ct-top-menu-item">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+                    </div>
                 </nav>
             </header>
-            <main class="py-52 mx-10">
+            <main class="lg:py-52 sm:py-32 py-20 mx-10">
                 <div id="about" class="about-me flex flex-row justify-center mx-7 items-center">
-                    <div class="introduction basis-1/2 text-3xl mx-2">
-                        <h6 class="mb-4  text-gray-500">This is me</h6>
-                        <h1 class="mb-4 font-extrabold h-16 w-auto uppercase text-center">Do Quang Trieu</h1>
-                        <div class="mb-10  text-gray-500">👋I am currently studying at HCMUTE. I’m interested in coding
+                    <div class="introduction basis-1/2 lg:text-3xl sm:text-xl text-xs mx-2">
+                        <h6 class="sm:mb-4 mb-2 text-gray-500">This is me</h6>
+                        <h1 class="sm:mb-4 mb-2 font-extrabold sm:h-16 h-5 w-auto uppercase text-center">Do Quang Trieu
+                        </h1>
+                        <div class="sm:mb-10 mb-5 text-gray-500">👋I am currently studying at HCMUTE. I’m interested in
+                            coding
                             web. 💞️ I’m looking to collaborate on my friend</div>
                         <a href="#footer"
                             class="h-fit w-fit px-2.5 absolute py-3 rounded-md shadow-lg hover:shadow-blue-500/80 bg-blue-300 text-slate-500 text-center hover:text-slate-900">Contact
@@ -49,11 +62,11 @@
                     </div>
                 </div>
                 <div id="exercises"
-                    class="exercise my-44 py-10 px-7 rounded-lg border-slate-600 border-opacity-25 border-x-2">
+                    class="exercise sm:my-44 my-24 py-10 px-7 rounded-lg border-slate-600 border-opacity-25 border-x-2">
                     <h1
-                        class="font-extrabold text-4xl transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300">
+                        class="font-extrabold text-xl sm:text-2xl lg:text-4xl transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300">
                         Exercises</h1>
-                    <ul class="text-2xl">
+                    <ul class="mg:text-lg lg:text-2xl text-sm">
                         <li class="basis-1/3 flex justify-start font-extrabold my-5">
                             Week 1:
                             <a href="https://doquangtrieu.onrender.com/JavaWeb"
@@ -70,19 +83,19 @@
             </main>
             <footer id="footer">
                 <div
-                    class="social border-slate-600 border-opacity-25 border-y-2 mx-7 flex items-center flex-col gap-3 py-5">
-                    <h4 class="font-semibold text-4xl">Follow me</h4>
-                    <div class="text-slate-600">Let me be social!</div>
-                    <div class="flex">
-                        <a href="https://www.facebook.com/grei.goa" class="px-3 ">
-                            <svg class="h-8 w-8 hover:fill-blue-400 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
+                    class="social border-slate-600 border-opacity-25 border-y-2 mx-7 flex items-center flex-col gap-3 py-1 sm:py-3 lg:py-5">
+                    <h4 class="font-semibold text-sm sm:text-2xl lg:text-4xl">Follow me</h4>
+                    <div class="text-slate-600 text-xs sm:text-base">Let me be social!</div>
+                    <div class="icon-social flex flex-row gap-3">
+                        <a href="https://www.facebook.com/grei.goa" class="">
+                            <svg class="icon-social-res hover:fill-blue-400 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/yarggxzc/" class="px-3 ">
-                            <svg class="h-8 w-8 hover:fill-orange-300 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
+                        <a href="https://www.instagram.com/yarggxzc/" class="">
+                            <svg class="icon-social-res hover:fill-orange-300 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -90,8 +103,8 @@
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                             </svg>
                         </a>
-                        <a href="https://twitter.com/" class="px-3">
-                            <svg class="h-8 w-8 hover:fill-blue-300 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
+                        <a href="https://twitter.com/" class="">
+                            <svg class="icon-social-res hover:fill-blue-300 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300 text-black"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path

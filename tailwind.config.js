@@ -3,7 +3,15 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      box_shadow_cus: "0px 20px 20px 0px rgba(132, 144, 255, 0.3)"
+      keyframes: {
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translate(0)' },
+        }
+      },
+      animation: {
+        slideDown: 'slideDown 1s ease-in-out',
+      }
     },
   },
   plugins: [],
