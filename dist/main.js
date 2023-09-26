@@ -41,8 +41,17 @@ avatar.addEventListener('mouseleave', () => {
 
 const hiddenElements = document.querySelectorAll('.hidden-scroll')
 
-ScrollReveal().reveal(hiddenElements)
 
-ScrollReveal().reveal('.hiddenElements', { delay: 250 });
-ScrollReveal().reveal('.hiddenElements', { duration: 1000 });
-ScrollReveal().reveal('.hiddenElements', { delay: 375, reset: true });
+
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2500,
+    delay: 200
+});
+
+ScrollReveal().reveal('#about', { delay: 100, origin: 'left' })
+ScrollReveal().reveal('#exercises', { delay: 0 })
+ScrollReveal().reveal('#footer', { delay: 100, origin: 'top' })
+ScrollReveal().reveal('.year-title', { delay: 100, origin: 'top' })
+ScrollReveal().reveal('.year-detail', { delay: 100, origin: 'right' })
