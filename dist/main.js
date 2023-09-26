@@ -3,7 +3,6 @@
 
 const getTopIcons = document.getElementById('top-icons')
 const getTopMenuIcon = document.getElementById('top-menu-icon')
-console.log("1")
 
 document.addEventListener('click', (e) => {
     if (getTopMenuIcon.contains(e.target)) {
@@ -28,3 +27,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
+const avatar = document.querySelector('.avatar-img');
+const overlay = document.querySelector('.overlay');
+
+avatar.addEventListener('mouseenter', () => {
+    overlay.classList.remove('hidden') // Hide the overlay on hover
+});
+
+avatar.addEventListener('mouseleave', () => {
+    overlay.classList.add('hidden') // Show the overlay on mouseleave
+
+});
+
+const hiddenElements = document.querySelectorAll('.hidden-scroll')
+
+ScrollReveal().reveal(hiddenElements)
+
+ScrollReveal().reveal('.hiddenElements', { delay: 250 });
+ScrollReveal().reveal('.hiddenElements', { duration: 1000 });
+ScrollReveal().reveal('.hiddenElements', { delay: 375, reset: true });
