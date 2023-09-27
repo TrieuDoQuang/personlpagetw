@@ -46,7 +46,7 @@ const hiddenElements = document.querySelectorAll('.hidden-scroll')
 ScrollReveal({
     reset: true,
     distance: '80px',
-    duration: 2500,
+    duration: 2000,
     delay: 200
 });
 
