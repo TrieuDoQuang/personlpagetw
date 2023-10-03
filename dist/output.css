@@ -1295,8 +1295,16 @@ video {
     margin-bottom: 1rem;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-16 {
     height: 4rem;
+  }
+
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .sm\:py-32 {
@@ -1311,6 +1319,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1325,6 +1337,12 @@ video {
 }
 
 @media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    .lg\:md\:hidden {
+      display: none;
+    }
+  }
+
   .lg\:block {
     display: block;
   }
